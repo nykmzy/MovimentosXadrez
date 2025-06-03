@@ -36,5 +36,23 @@ int main () {
 
     printf("\n");
 
+    // Movimento do CAVALO: 2 casas para Baixo + 1 para Esquerda (usando FOR + WHILE)
+    printf("Movimento do Cavalo (2 casas para Baixo e 1 para a Esquerda):\n");
+
+    // Primeiro loop (FOR): duas casas para baixo
+    for (int Cbaixo = 1; Cbaixo <= 2; Cbaixo++) {
+        printf("Baixo\n");
+        
+        // Dentro de cada passo para baixo, verificamos se chegamos no segundo para fazer o L
+        if (Cbaixo == 2) {
+            // Segundo loop (WHILE): uma casa para esquerda
+            int Clado = 0;
+            while (Clado < 1) {
+                printf("Esquerda\n");
+                Clado++;
+            }
+        }
+    }
+
     return 0;
 }
